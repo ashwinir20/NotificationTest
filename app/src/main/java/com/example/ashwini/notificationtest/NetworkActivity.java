@@ -24,6 +24,8 @@ public class NetworkActivity extends AppCompatActivity {
             this.startService(intent);
         } else {
             networkButton.setText("Start Network Test");
+            intent = new Intent(this, NetworkIntentService.class );
+            this.stopService(intent);
         }
     }
 }

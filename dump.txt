@@ -1,0 +1,172 @@
+  Settings:
+    light_after_inactive_to=+5m0s0ms
+    light_pre_idle_to=+10m0s0ms
+    light_idle_to=+5m0s0ms
+    light_idle_factor=2.0
+    light_max_idle_to=+15m0s0ms
+    light_idle_maintenance_min_budget=+1m0s0ms
+    light_idle_maintenance_max_budget=+5m0s0ms
+    min_light_maintenance_time=+5s0ms
+    min_deep_maintenance_time=+30s0ms
+    inactive_to=+30m0s0ms
+    sensing_to=+4m0s0ms
+    locating_to=+30s0ms
+    location_accuracy=20.0m
+    motion_inactive_to=+10m0s0ms
+    idle_after_inactive_to=+30m0s0ms
+    idle_pending_to=+5m0s0ms
+    max_idle_pending_to=+10m0s0ms
+    idle_pending_factor=2.0
+    idle_to=+1h0m0s0ms
+    max_idle_to=+6h0m0s0ms
+    idle_factor=2.0
+    min_time_to_alarm=+1h0m0s0ms
+    max_temp_app_whitelist_duration=+5m0s0ms
+    mms_temp_app_whitelist_duration=+1m0s0ms
+    sms_temp_app_whitelist_duration=+20s0ms
+    notification_whitelist_duration=+30s0ms
+  Idling history:
+     deep-maint: -4h18m27s312ms
+      deep-idle: -4h18m14s468ms
+     deep-maint: -4h18m12s555ms
+      deep-idle: -4h18m11s654ms
+     deep-maint: -4h18m10s835ms
+      deep-idle: -4h18m10s80ms
+     deep-maint: -4h18m9s433ms
+      deep-idle: -4h18m9s300ms
+     deep-maint: -4h18m8s891ms
+      deep-idle: -4h18m8s199ms
+     deep-maint: -4h18m7s577ms
+      deep-idle: -4h18m6s925ms
+     deep-maint: -4h18m6s345ms
+      deep-idle: -4h18m5s795ms
+     deep-maint: -4h18m5s226ms
+      deep-idle: -4h18m4s543ms
+     deep-maint: -4h17m21s285ms
+      deep-idle: -4h17m19s256ms
+     deep-maint: -4h16m56s373ms
+      deep-idle: -4h16m51s110ms
+         normal: -4h8m59s651ms
+      deep-idle: -4h5m29s656ms
+     deep-maint: -4h5m25s259ms
+      deep-idle: -4h5m19s928ms
+     deep-maint: -4h5m18s781ms
+      deep-idle: -4h4m55s182ms
+         normal: -4h4m11s16ms
+      deep-idle: -3h58m16s483ms
+     deep-maint: -3h57m51s216ms
+      deep-idle: -3h57m28s239ms
+     deep-maint: -3h52m15s954ms
+      deep-idle: -3h52m13s954ms
+     deep-maint: -3h51m25s489ms
+      deep-idle: -3h51m22s445ms
+     deep-maint: -3h41m0s31ms
+      deep-idle: -3h40m49s39ms
+     deep-maint: -3h5m23s895ms
+      deep-idle: -3h5m22s450ms
+     deep-maint: -3h1m14s563ms
+      deep-idle: -3h1m11s226ms
+     deep-maint: -2h57m53s849ms
+      deep-idle: -2h57m51s975ms
+         normal: -2h55m54s543ms
+     light-idle: -2h30m19s925ms
+    light-maint: -2h28m52s430ms
+     light-idle: -2h28m49s230ms
+         normal: -2h26m38s268ms
+     light-idle: -2h26m5s800ms
+    light-maint: -2h20m21s231ms
+     light-idle: -2h20m16s105ms
+    light-maint: -2h10m16s77ms
+     light-idle: -2h10m10s964ms
+         normal: -1h55m7s971ms
+    light-maint: -1h54m57s785ms
+     light-idle: -1h54m57s779ms
+    light-maint: -1h54m52s778ms
+     light-idle: -1h54m47s735ms
+    light-maint: -1h49m35s497ms
+     light-idle: -1h49m30s455ms
+         normal: -1h43m4s336ms
+    light-maint: -1h39m27s419ms
+     light-idle: -1h39m27s416ms
+    light-maint: -1h39m27s129ms
+     light-idle: -1h39m22s110ms
+    light-maint: -1h34m21s615ms
+     light-idle: -1h34m16s480ms
+    light-maint: -1h24m12s867ms
+     light-idle: -1h24m7s709ms
+    light-maint: -1h16m56s566ms
+     light-idle: -1h16m51s523ms
+         normal: -1h16m2s456ms
+     light-idle: -1h2m57s426ms
+    light-maint: -1h2m55s61ms
+     light-idle: -1h2m53s106ms
+    light-maint: -52m48s141ms
+     light-idle: -52m41s534ms
+         normal: -52m31s312ms
+     light-idle: -49m40s655ms
+    light-maint: -44m16s18ms
+     light-idle: -44m10s993ms
+    light-maint: -41m38s18ms
+     light-idle: -41m36s503ms
+    light-maint: -39m35s613ms
+     light-idle: -39m30s576ms
+    light-maint: -39m29s109ms
+     light-idle: -39m24s60ms
+    light-maint: -39m19s805ms
+     light-idle: -39m17s979ms
+    light-maint: -37m21s10ms
+     light-idle: -37m15s970ms
+    light-maint: -37m5s169ms
+     light-idle: -37m3s790ms
+    light-maint: -36m51s130ms
+     light-idle: -36m46s89ms
+      deep-idle: -36m2s911ms
+     deep-maint: -35m59s957ms
+      deep-idle: -35m29s827ms
+         normal: -14m14s34ms
+     light-idle: -10m35s807ms
+      deep-idle: -10m14s440ms
+  Whitelist (except idle) system apps:
+    com.android.providers.downloads
+    com.android.vending
+    com.google.android.gms
+    com.google.android.ims
+    com.google.android.apps.tycho
+    com.android.omadm.service
+  Whitelist system apps:
+    com.android.providers.downloads
+    com.google.android.gms
+    com.google.android.ims
+    com.google.android.apps.tycho
+    com.android.omadm.service
+  Whitelist (except idle) all app ids:
+    10006
+    10008
+    10012
+    10022
+    10071
+    10134
+  Whitelist all app ids:
+    10006
+    10008
+    10012
+    10071
+    10134
+  mLightEnabled=true  mDeepEnabled=true
+  mForceIdle=true
+  mMotionSensor={Sensor name="Significant motion", vendor="Google", version=1, type=17, maxRange=1.0, resolution=1.0, power=0.0, minDelay=-1}
+  mCurDisplay=Display id 0: DisplayInfo{"Built-in Screen", uniqueId "local:0", app 1440 x 2392, real 1440 x 2560, largest app 2392 x 2308, smallest app 1440 x 1356, mode 1, defaultMode 1, modes [{id=1, width=1440, height=2560, fps=60.0}], colorMode 0, supportedColorModes [0, 7, 8, 50, 100, 101, 102, 103], hdrCapabilities android.view.Display$HdrCapabilities@a69d6308, rotation 0, density 560 (515.154 x 516.063) dpi, layerStack 0, appVsyncOff 1000000, presDeadline 16666667, type BUILT_IN, state OFF, FLAG_SECURE, FLAG_SUPPORTS_PROTECTED_BUFFERS}, DisplayMetrics{density=3.5, width=1440, height=2392, scaledDensity=3.5, xdpi=515.154, ydpi=516.063}, isValid=true
+  mScreenOn=false
+  mNetworkConnected=true
+  mCharging=false
+  mMotionActive=true
+  mNotMoving=false
+  mLocating=false mHasGps=true mHasNetwork=false mLocated=false
+  mLastGenericLocation=Location[fused 39.169193,-86.525390 acc=3100 et=+2d21h0m2s901ms]
+  mState=IDLE mLightState=OVERRIDE
+  mInactiveTimeout=+30m0s0ms
+  mNextAlarmTime=+49m45s558ms
+  mNextIdlePendingDelay=+5m0s0ms
+  mNextIdleDelay=+2h0m0s0ms
+  mNextIdleDelay=+10m0s0ms
+  mCurIdleBudget=+1m0s0ms

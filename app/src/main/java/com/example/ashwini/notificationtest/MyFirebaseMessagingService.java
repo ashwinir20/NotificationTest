@@ -32,7 +32,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
         if (rm.getData().size() > 0) {
 
-            Log.d(TAG, "Message data payload: " + rm.getData().get("kedar"));
+            Log.d(TAG, "Message data payload: " + rm.getData().get("test"));
 
             try {
                 Log.d(TAG, "startNotification");

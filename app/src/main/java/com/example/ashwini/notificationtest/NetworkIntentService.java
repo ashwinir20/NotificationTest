@@ -3,8 +3,6 @@ package com.example.ashwini.notificationtest;
 import android.app.IntentService;
 import android.content.Context;
 import android.content.Intent;
-import android.icu.text.SimpleDateFormat;
-import android.icu.util.Calendar;
 import android.os.Environment;
 import android.os.PowerManager;
 import android.util.Log;
@@ -12,6 +10,7 @@ import android.util.Log;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Date;
 
 /**
  * An {@link IntentService} subclass for handling asynchronous task requests in
@@ -76,11 +75,11 @@ public class NetworkIntentService extends IntentService {
 
             File path = Environment.getExternalStoragePublicDirectory
                     (
-                            Environment.DIRECTORY_DOWNLOADS + "/log/"
+                            Environment.DIRECTORY_DOWNLOADS + "/"
 
                     );
 
-            File file = new File(path, "network.txt");
+            File file = new File(path, "testing_BATTERY.txt");
 
             file.createNewFile();
 
@@ -101,7 +100,7 @@ public class NetworkIntentService extends IntentService {
 
         try {
 
-            for (int i = 0; i <= 10000; ) {
+            for (int i = 0; i <= 1000; ) {
 
                 Thread.sleep(50);
 
@@ -110,25 +109,24 @@ public class NetworkIntentService extends IntentService {
 
                 PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
                 //Log.d(TAG, "State:" + pm.isDeviceIdleMode());
-               // Log.d(TAG, "Power Saver:" + pm.isPowerSaveMode());
-                fw.write("m:"+pm.isDeviceIdleMode());
+                //Log.d(TAG, "Power Saver:" + pm.isPowerSaveMode());
+                //fw.write("m:"+pm.isDeviceIdleMode());
                 fw.write(",");
 
-                Calendar c = Calendar.getInstance();
-                System.out.println("Current time =&gt; "+c.getTime());
 
-                SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-                String formattedDate = df.format(c.getTime());
-                fw.write("t:"+formattedDate);
+                System.out.println("Current time =&gt; "+new Date().getTime());
+
+                //SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+                //String formattedDate = df.format();
+                fw.write("t:"+new Date().getTime());
                 fw.write(",");
 
                 //getting network data
 
 
-                Network.sendGET("http://kgundlup.pythonanywhere.com/api/json",fw);
+                Network.sendGET("http://kgundlup.pythonanywhere.com/mobile-computing/sync",fw);
 
 
-                Log.d(TAG, Integer.toString(i));
                 Log.d(TAG, "Sent Get Request");
             }
             fw.close();

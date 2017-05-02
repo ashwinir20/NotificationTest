@@ -35,12 +35,14 @@ public class Network {
             fw.write("TX:"+TrafficStats.getUidTxBytes(Process.myUid()));
             fw.write(",");
 
+
+
             //getting network data
 
             int responseCode = con.getResponseCode();
 
-            Log.d(TAG+" to URL : ", url);
-            Log.d(TAG+" Code : ", Integer.toString(responseCode));
+            //Log.d(TAG+" to URL : ", url);
+           // Log.d(TAG+" Code : ", Integer.toString(responseCode));
 
             BufferedReader in = new BufferedReader(
                     new InputStreamReader(con.getInputStream()));
@@ -57,7 +59,7 @@ public class Network {
             fw.write("RX:"+TrafficStats.getUidRxBytes(Process.myUid()));
             fw.write("\n");
             //print result
-            Log.d(TAG, response.toString());
+            //Log.d(TAG, response.toString());
 
         }
         catch(Exception e){
